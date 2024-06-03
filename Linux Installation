@@ -1,1 +1,40 @@
+Toolbox Installation and Usage Guide
+Installation Instructions for Linux
+1. **Create Installation Directory**:
+   - It is advisable to create a directory in your Documents folder for the toolbox.
+   - Open your terminal and run the following commands to create the directory:
+     ```sh
+     mkdir -p ~/Documents/Toolbox
+     ```
+   - Install the standalone application in the created directory: `/home/username/Documents/Toolbox`.
+2. **Download and Install**:
+   - Locate the installer file named `ivimDKI3Dtv_Installer_v1_4.install`.
+   - Double-click the installer to begin the installation process.
+3. **Run the Application**:
+   - After the installation is complete, open your terminal.
+   - Navigate to the application directory by running:
+     ```sh
+     cd /home/username/Documents/Toolbox/application
+     ```
+   - Execute the application with the following command:
+     ```sh
+     ./run_ivimDKI3Dtvtool.sh /home/username/Documents/Toolbox/v911
+     ```
+Notes:
+- Replace `username` with your actual Linux username in the commands.
+- Ensure that the paths used in the commands match the actual installation paths.
+
+Application Description
+ivimDKI3Dtvtool__v1_4 executes IVIM-DKI analysis with TV, consisting of two tabs:
+- **Input Data and Analysis**: Here, the user needs to select IVIM-DKI data and define parameters. These inputs are fed to the IVIM-DKI model with TV after clicking on 'Run'. The analysis can also be initiated with default parameters defined in the app.
+- **Output**: This tab allows viewing IVIM-DKI parameter maps in different colormaps and saving them as NIfTI format. It also includes ROI statistics, where ROIs can be loaded, and statistics can be performed after clicking on 'Calculate ROI stats and Save statistics'. The statistics include mean, standard deviation, skewness, kurtosis, entropy, and energy of IVIM-DKI parameters, which are displayed on the app and saved as a .xlsx file for the provided ROI.
+Disclaimer
+This project can be used only for research purposes. The authors are not liable for any clinical use of it, and they cannot be held responsible.
+Contact Information
+If you have any queries or suggestions about this package, kindly contact Dr. Amit Mehndiratta, Indian Institute of Technology Delhi, India.
+E-mail: amehndiratta@cbme.iitd.ac.in, amit.mehndiratta@keble.oxon.org.
+Citation Information
+If you use this toolbox, please cite:
+[1] Malagi, A. V. et al. (2021). IVIM-DKI differentiation between prostate cancer and benign prostatic hyperplasia: comparison of 1.5T vs. 3T MRI. Magnetic Resonance Materials in Physics, Biology and Medicine. DOI: 10.1007/s10334-021-00932-1
+[2] Kayal, E. B. et al. (2017). Quantitative analysis of intravoxel incoherent motion (IVIM) diffusion MRI using total variation and Huber penalty function. Medical physics, 44(11), 5849-5858.
 
